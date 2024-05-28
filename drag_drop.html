@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>KitLuc: Home</title>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col justify-center items-center">
+    <script type="module">
+        import ImageCarousel from './assets/js/imageCarousel.js';
+
+        const images = [
+            './assets/images/image_one.jpg',
+            './assets/images/image_two.jpg',    
+            './assets/images/image_three.jpg'
+        ];
+        const carousel = new ImageCarousel(images);
+        document.body.appendChild(carousel.getElement());
+    </script>
+</body>
+</html>
